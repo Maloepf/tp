@@ -8,7 +8,9 @@ Some questions :
 * What is Spark RDD API ?
 * What is Spark Dataset API ?
 * With which languages can you use Spark ? 
-* Which data sources or data sinks can Spark work with ? 
+* Which data sources or data sinks can Spark work with ?
+    data source: all most all data sources
+    data sinks: all data softwara managment that have GDBC driver
 
 ### Analyse data with Apache Spark and Scala 
 One engineering team of your company created for you a TV News data stored as JSON inside the folder `data-news-json/`.
