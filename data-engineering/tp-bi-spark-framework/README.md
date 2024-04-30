@@ -31,7 +31,7 @@ Create a new dashboard where you can add these questions :
 2. Display the last 10 news talking about climate change
 3. Display the last 10 news **not** talking about climate change
 4. You should have 3 questions now on your dashboard
-5. Display the number of news talking about climate change by month and yeah
+5. Display the number of news talking about climate change by month and year
 6. Display the number of news talking about climate change by month, year and by media
 7. You can improvise your own queries
 
