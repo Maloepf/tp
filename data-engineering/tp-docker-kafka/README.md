@@ -39,7 +39,9 @@ Using Conduktor, connect to **your existing docker kafka cluster** with `localho
 
 Questions:
 * [ ] When should we use a key when producing a message into Kafka ? What are the risks ? [Help](https://stackoverflow.com/a/61912094/3535853)
+to send a message in a specific topic (key : new_message goes to topic: message)
 * [ ] How does the default partitioner (sticky partition) work with kafka ? [Help1](https://www.confluent.io/fr-fr/blog/apache-kafka-producer-improvements-sticky-partitioner/) and [Help2](https://www.conduktor.io/kafka/producer-default-partitioner-and-sticky-partitioner#Sticky-Partitioner-(Kafka-%E2%89%A5-2.4)-3)
+message are partitioned in function of the type of the message. json type message goes in topic 4, and string message type goes in topic 3 
 
 #### Command CLI
 1. Connect to your kafka cluster with 2 command-line-interface (CLI)
@@ -65,6 +67,8 @@ Pay attention to the `KAFKA_ADVERTISED_LISTENERS` config from the docker-compose
 4. Keep reading events from a topic from one terminal : https://kafka.apache.org/documentation/#quickstart_consume
 * try the default config
 * what does the `--from-beginning` config do ? What happens when you do not use `--from-beginning` and instead the config `--group` such as --group?
+
+it shows all the events that where recorded from the beggining. if not use, it will only print the events that are recoded during the use of the consumer.
 * Keep reading the message in your terminal and using Conduktor, can you notice something in the **Consumers tab** ? 
 * Now, in your terminal stop your consumer, notice the **lag** inside the **Consumer tab** on Conduktor, it should be **0**
 * With a producer, send message to the same topic, and look at the value of **lag**, what's happening ?
